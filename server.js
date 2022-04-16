@@ -13,9 +13,10 @@ app.use(cors());
 app.use(express.json());
 app.use(logger("dev")); // middle ware
 app.use(express.json());
+app.use("/api/todo", todoController);
+
 app.use(favicon(path.join(__dirname, "build", "favicon.ico"))); // dir name always give you
 app.use(express.static(path.join(__dirname, "build"))); // directory that we're in slash build
-app.use("/api/todo", todoController);
 app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
