@@ -5,9 +5,9 @@ const app = express();
 const logger = require("morgan");
 const favicon = require("morgan");
 const path = require("path");
-const todoController = require("./controllers/todo");
+const todoController = require("../controllers/todo");
 const PORT = process.env.PORT || 3001;
-require("./config/database.js");
+require("../config/database.js");
 
 app.use(cors());
 app.use(express.json());
