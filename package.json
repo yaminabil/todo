@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:3001",
+  "proxy": "https://localhost:3001",
   "name": "todo",
   "version": "0.1.0",
   "private": true,
